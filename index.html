@@ -1068,33 +1068,147 @@
             .header-nav {
                 display: none;
             }
+            .header-container {
+                padding: 10px 16px;
+                gap: 10px;
+            }
+            .logo-area img {
+                height: 42px;
+            }
+            .btn-whatsapp-header {
+                padding: 8px 14px;
+                font-size: 0.82rem;
+                gap: 6px;
+            }
             .top-banner {
                 font-size: 0.72rem;
-                padding: 6px 10px;
+                padding: 7px 12px;
+                gap: 6px 12px;
+            }
+            .hero-section {
+                padding: 40px 16px 50px;
             }
             .hero-title {
-                font-size: 2rem;
+                font-size: 1.85rem;
+                margin-bottom: 16px;
+            }
+            .hero-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 22px;
             }
             .hero-features {
                 grid-template-columns: 1fr;
+                gap: 8px;
+                margin-bottom: 25px;
+            }
+            .hero-feat-item {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+            }
+            .hero-cta-group {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .btn-whatsapp-hero {
+                width: 100%;
+                justify-content: center;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            .delivery-tag {
+                justify-content: center;
+            }
+            .hero-visual-card {
+                padding: 14px;
+                margin-top: 25px;
+                border-radius: 14px;
+            }
+            .preview-box {
+                height: 110px;
+            }
+            .quick-strip {
+                padding: 20px 12px;
             }
             .quick-strip-container {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+            .quick-cat-btn {
+                padding: 10px 6px;
+                border-radius: 10px;
+            }
+            .quick-cat-btn .icon {
+                font-size: 1.3rem;
+            }
+            .quick-cat-btn .label {
+                font-size: 0.72rem;
+            }
+            section {
+                padding: 45px 16px;
+            }
+            .section-header {
+                margin-bottom: 30px;
+            }
+            .section-title {
+                font-size: 1.65rem;
+            }
+            .section-desc {
+                font-size: 0.9rem;
             }
             .products-grid-4, .products-grid-3, .why-us-grid, .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+            .card-img-wrap {
+                height: 180px;
+            }
+            .card-body {
+                padding: 16px;
+            }
+            .card-cta {
+                width: 100%;
+                justify-content: center;
+                padding: 11px 14px;
+            }
+            .highlight-banner {
+                padding: 24px 18px;
+                margin-top: 30px;
+                border-radius: 16px;
+                gap: 18px;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .highlight-banner h3 {
+                font-size: 1.35rem;
+            }
+            .highlight-badges {
+                justify-content: center;
+                gap: 6px;
+            }
+            .btn-banner-whatsapp {
+                width: 100%;
+                justify-content: center;
+            }
+            .why-card, .testi-card {
+                padding: 22px 18px;
+            }
+            .cta-final-section {
+                padding: 50px 16px;
+            }
+            .cta-final-title {
+                font-size: 1.7rem;
+            }
             .footer-grid {
                 grid-template-columns: 1fr;
             }
-            .section-title {
-                font-size: 1.75rem;
+            .btn-whatsapp-float {
+                bottom: 18px;
+                right: 18px;
+                width: 52px;
+                height: 52px;
             }
-            .header-container {
-                padding: 10px 15px;
-            }
-            .phone-badge span {
-                font-size: 0.8rem;
+            .btn-whatsapp-float svg {
+                width: 26px;
+                height: 26px;
             }
         }
     </style>
@@ -1126,13 +1240,9 @@
             </nav>
 
             <div class="header-contact-wrap">
-                <a href="tel:8332321663" class="phone-badge" title="Ligue para a MSF">
-                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    <span>(83) 3232-1663</span>
-                </a>
                 <a href="https://wa.me/5583988243453?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20na%20MSF!" class="btn-whatsapp-header" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                    <span>Orçamento Rápido</span>
+                    <span>Orçamento</span>
                 </a>
             </div>
         </div>
@@ -1174,7 +1284,7 @@
                 <div class="hero-cta-group">
                     <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20completo%20para%20minha%20obra." class="btn-whatsapp-hero" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                        <span>Enviar Lista no WhatsApp</span>
+                        <span>Orçamento</span>
                     </a>
                     <div class="delivery-tag">
                         <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
@@ -2120,7 +2230,7 @@
             <p class="cta-final-desc">Economize tempo e dinheiro com a qualidade e a agilidade do maior Home Center da região. Envie sua lista agora mesmo!</p>
             <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor%20e%20enviar%20minha%20lista%20de%20materiais." class="btn-whatsapp-hero" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                <span>Falar com Vendedor no WhatsApp</span>
+                <span>Falar com Vendedor</span>
             </a>
         </div>
     </section>
