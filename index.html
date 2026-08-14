@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSF Madeiras e Materiais de Construção | O Maior Home Center de Bayeux e Região</title>
+    <meta name="description" content="Quem constrói bem, constrói com a MSF! Madeiramento nobre, cimento, ferragens, elétrica, iluminação, tintas, portas, pisos e acabamentos com entrega rápida em até 72h.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --red-brand: #CC0000;
+            --red-dark: #A30000;
+            --red-light: #FFECEC;
+            --blue-brand: #00063A;
+            --blue-dark: #000320;
+            --blue-light: #0d1656;
+            --white: #FFFFFF;
+            --gray-bg: #F4F6F9;
+            --gray-light: #ECEFF3;
+            --gray-border: #E2E8F0;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --green-whatsapp: #25D366;
+            --green-whatsapp-dark: #128C7E;
+            --gold: #D97706;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+            --shadow-lg: 0 16px 36px rgba(0,6,58,0.12);
+            --shadow-hover: 0 20px 40px rgba(204,0,0,0.18);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* TOP BANNER / SLOGAN */
+        .top-banner {
+            background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue-brand) 50%, var(--red-dark) 100%);
+            color: var(--white);
+            padding: 9px 15px;
+            text-align: center;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .top-banner span.highlight {
+            color: #FFD700;
+            background: rgba(255,255,255,0.12);
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+
+        /* HEADER */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            gap: 15px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-area img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--blue-brand);
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--red-brand);
+        }
+
+        .header-contact-wrap {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            white-space: nowrap;
+        }
+
+        .phone-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--blue-brand);
+            font-weight: 700;
+            font-size: 0.88rem;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background-color: var(--gray-bg);
+            transition: var(--transition);
+        }
+
+        .phone-badge:hover {
+            color: var(--red-brand);
+            background-color: var(--red-light);
+        }
+
+        .phone-badge svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        .btn-whatsapp-header {
+            background-color: var(--green-whatsapp);
+            color: var(--white);
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            white-space: nowrap;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+        }
+
+        .btn-whatsapp-header:hover {
+            background-color: var(--green-whatsapp-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-whatsapp-header svg {
+            width: 17px;
+            height: 17px;
+            fill: currentColor;
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 6, 58, 0.94) 0%, rgba(13, 22, 86, 0.90) 60%, rgba(204, 0, 0, 0.82) 100%), url('assets/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding: 75px 20px 85px;
+        }
+
+        .hero-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .home-center-badge {
+            background-color: var(--red-brand);
+            color: var(--white);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 18px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.4);
+        }
+
+        .hero-title {
+            font-size: 2.7rem;
+            font-weight: 900;
+            line-height: 1.18;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-title span {
+            color: #FF4D4D;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #E2E8F0;
+            margin-bottom: 30px;
+            max-width: 580px;
+            line-height: 1.6;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .hero-feat-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 14px;
+            border-radius: 10px;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-feat-item svg {
+            width: 18px;
+            height: 18px;
+            fill: #4ADE80;
+            flex-shrink: 0;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn-whatsapp-hero {
+            background-color: var(--green-whatsapp);
+            color: var(--white);
+            text-decoration: none;
+            padding: 16px 34px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-whatsapp-hero:hover {
+            background-color: var(--green-whatsapp-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+        }
+
+        .btn-whatsapp-hero svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        .delivery-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #CBD5E1;
+        }
+
+        .delivery-tag svg {
+            width: 20px;
+            height: 20px;
+            fill: #FFD700;
+        }
+
+        /* HERO VISUAL GRID */
+        .hero-visual-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-grid-preview {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .preview-box {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 135px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .preview-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .preview-box:hover img {
+            transform: scale(1.08);
+        }
+
+        .preview-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(0deg, rgba(0,6,58,0.92) 0%, rgba(0,6,58,0) 100%);
+            padding: 20px 10px 8px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--white);
+            text-align: center;
+        }
+
+        /* QUICK CATEGORIES STRIP */
+        .quick-strip {
+            background-color: var(--white);
+            padding: 30px 20px;
+            border-bottom: 1px solid var(--gray-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .quick-strip-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        .quick-cat-btn {
+            background-color: var(--gray-bg);
+            border: 1px solid var(--gray-border);
+            border-radius: var(--radius-md);
+            padding: 14px 10px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--blue-brand);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quick-cat-btn:hover {
+            background-color: var(--red-brand);
+            color: var(--white);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(204,0,0,0.2);
+            border-color: var(--red-brand);
+        }
+
+        .quick-cat-btn .icon {
+            font-size: 1.6rem;
+        }
+
+        .quick-cat-btn .label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* SECTION STYLING */
+        section {
+            padding: 75px 20px;
+        }
+
+        .section-container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background-color: var(--red-light);
+            color: var(--red-brand);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--blue-brand);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .section-title span {
+            color: var(--red-brand);
+        }
+
+        .section-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .bg-gray-section {
+            background-color: var(--gray-bg);
+        }
+
+        .bg-blue-section {
+            background: linear-gradient(135deg, var(--blue-brand) 0%, var(--blue-light) 100%);
+            color: var(--white);
+        }
+
+        .bg-blue-section .section-title {
+            color: var(--white);
+        }
+
+        .bg-blue-section .section-badge {
+            background-color: rgba(255,255,255,0.15);
+            color: #FFD700;
+        }
+
+        .bg-blue-section .section-desc {
+            color: #CBD5E1;
+        }
+
+        /* PRODUCT GRIDS (4 COLUMNS / 3 COLUMNS) */
+        .products-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .products-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* PRODUCT CARD */
+        .product-card {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(204,0,0,0.3);
+        }
+
+        .card-img-wrap {
+            position: relative;
+            height: 200px;
+            background-color: #E2E8F0;
+            overflow: hidden;
+        }
+
+        .card-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+
+        .product-card:hover .card-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 6, 58, 0.88);
+            color: var(--white);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        .card-tag.novo {
+            background: var(--red-brand);
+        }
+
+        .card-tag.destaque {
+            background: #EAB308;
+            color: #000;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--blue-brand);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .card-subtitle {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--red-brand);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-items-list {
+            list-style: none;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .card-items-list li {
+            font-size: 0.86rem;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 16px;
+            line-height: 1.4;
+        }
+
+        .card-items-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--red-brand);
+            font-weight: 800;
+            font-size: 0.8rem;
+        }
+
+        .card-cta {
+            background-color: var(--gray-bg);
+            color: var(--blue-brand);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.84rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+            border: 1px solid var(--gray-border);
+        }
+
+        .card-cta:hover {
+            background-color: var(--green-whatsapp);
+            color: var(--white);
+            border-color: var(--green-whatsapp);
+        }
+
+        .card-cta svg {
+            width: 15px;
+            height: 15px;
+            fill: currentColor;
+        }
+
+        /* HIGHLIGHT BANNER */
+        .highlight-banner {
+            background: linear-gradient(135deg, var(--red-brand) 0%, var(--red-dark) 100%);
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            margin: 50px auto 0;
+            box-shadow: 0 12px 35px rgba(204,0,0,0.3);
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .highlight-banner h3 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .highlight-banner p {
+            font-size: 0.98rem;
+            color: #FFE5E5;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .highlight-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .highlight-pill {
+            background: rgba(255,255,255,0.2);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .btn-banner-whatsapp {
+            background: var(--white);
+            color: var(--red-brand);
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            transition: var(--transition);
+        }
+
+        .btn-banner-whatsapp:hover {
+            background: var(--blue-brand);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* WHY CHOOSE US */
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-lg);
+            padding: 30px 24px;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--red-brand);
+        }
+
+        .why-number {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #FF4D4D;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+
+        .why-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .why-text {
+            font-size: 0.88rem;
+            color: #CBD5E1;
+            line-height: 1.6;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .testi-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .testi-card::before {
+            content: "“";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 4rem;
+            color: var(--gray-light);
+            font-family: Georgia, serif;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .testi-text {
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .testi-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testi-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--red-brand);
+        }
+
+        .testi-name {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--blue-brand);
+        }
+
+        .testi-role {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-accordion {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 14px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            border-color: var(--blue-brand);
+        }
+
+        .faq-question {
+            padding: 18px 22px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 750;
+            font-size: 0.98rem;
+            color: var(--blue-brand);
+            user-select: none;
+        }
+
+        .faq-icon {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--red-brand);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 22px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 22px 20px;
+            max-height: 300px;
+        }
+
+        /* FINAL CTA */
+        .cta-final-section {
+            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-brand) 60%, var(--red-brand) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .cta-final-box {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .cta-final-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .cta-final-desc {
+            font-size: 1.1rem;
+            color: #E2E8F0;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #00041F;
+            color: var(--white);
+            padding: 60px 20px 25px;
+            font-size: 0.85rem;
+            border-top: 3px solid var(--red-brand);
+        }
+
+        .footer-grid {
+            max-width: 1240px;
+            margin: 0 auto 40px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-logo {
+            max-width: 170px;
+            margin-bottom: 18px;
+        }
+
+        .footer-logo img {
+            width: 100%;
+            display: block;
+        }
+
+        .footer-about {
+            color: #94A3B8;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer-col-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 16px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background-color: var(--red-brand);
+        }
+
+        .footer-contacts-list {
+            list-style: none;
+        }
+
+        .footer-contacts-list li {
+            margin-bottom: 10px;
+            color: #CBD5E1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contacts-list a {
+            color: #CBD5E1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-contacts-list a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: #64748B;
+            font-size: 0.78rem;
+            line-height: 1.6;
+        }
+
+        /* FLOATING WHATSAPP BUTTON */
+        .btn-whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--green-whatsapp);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            z-index: 9999;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .btn-whatsapp-float:hover {
+            background-color: var(--green-whatsapp-dark);
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        .btn-whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        .float-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--green-whatsapp);
+            opacity: 0.6;
+            animation: pulse-ring 2s infinite;
+            z-index: -1;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.6; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-subtitle, .hero-features {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-cta-group {
+                justify-content: center;
+            }
+            .quick-strip-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .products-grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .products-grid-3, .why-us-grid, .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .highlight-banner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-nav {
+                display: none;
+            }
+            .top-banner {
+                font-size: 0.72rem;
+                padding: 6px 10px;
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-features {
+                grid-template-columns: 1fr;
+            }
+            .quick-strip-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .products-grid-4, .products-grid-3, .why-us-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 1.75rem;
+            }
+            .header-container {
+                padding: 10px 15px;
+            }
+            .phone-badge span {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR SLOGAN -->
+    <div class="top-banner">
+        <div>⭐ <strong>QUEM CONSTRÓI BEM, CONSTRÓI COM A MSF!</strong></div>
+        <span class="highlight">O MAIOR HOME CENTER DA CIDADE</span>
+        <div>🚚 Entrega rápida na sua obra em até 72h</div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-area">
+                <img src="assets/logo.png" alt="Logo MSF Home Center">
+            </a>
+
+            <nav class="header-nav">
+                <a href="#madeiras" class="nav-link">Madeiras</a>
+                <a href="#construcao" class="nav-link">Construção</a>
+                <a href="#eletrica" class="nav-link">Elétrica</a>
+                <a href="#portas" class="nav-link">Portas & Janelas</a>
+                <a href="#lazer" class="nav-link">Área de Lazer</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="header-contact-wrap">
+                <a href="tel:8332321663" class="phone-badge" title="Ligue para a MSF">
+                    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>(83) 3232-1663</span>
+                </a>
+                <a href="https://wa.me/5583988243453?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20na%20MSF!" class="btn-whatsapp-header" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    <span>Orçamento Rápido</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="home-center-badge">
+                    🏠 O Maior Home Center da Cidade
+                </span>
+                <h1 class="hero-title">
+                    Do Alicerce ao Acabamento: <span>Tudo para sua Obra</span> na MSF
+                </h1>
+                <p class="hero-subtitle">
+                    Quem constrói bem, constrói com a MSF. Muito mais que madeiras: somos o seu Home Center completo com cimento, ferragens, hidráulica, iluminação, pisos e marcenaria sob medida.
+                </p>
+
+                <div class="hero-features">
+                    <div class="hero-feat-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Madeiramento Nobre Selecionado</span>
+                    </div>
+                    <div class="hero-feat-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Cimento & Ferragens Armadas</span>
+                    </div>
+                    <div class="hero-feat-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Cortes & Serviços sob Medida</span>
+                    </div>
+                    <div class="hero-feat-item">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <span>Entrega na Obra em até 72h</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20completo%20para%20minha%20obra." class="btn-whatsapp-hero" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        <span>Enviar Lista no WhatsApp</span>
+                    </a>
+                    <div class="delivery-tag">
+                        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        <span>Frota própria para Bayeux e Grande JP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual-card">
+                <div class="hero-grid-preview">
+                    <div class="preview-box">
+                        <img src="assets/cards/concretagem_fundacao.jpg" alt="Concretagem e Fundação">
+                        <div class="preview-label">🏗️ Concretagem & Estrutura</div>
+                    </div>
+                    <div class="preview-box">
+                        <img src="assets/cards/madeiras_massaranduba.jpg" alt="Madeiramento Nobre">
+                        <div class="preview-label">🪵 Madeiramento Nobre</div>
+                    </div>
+                    <div class="preview-box">
+                        <img src="assets/cards/iluminacao_led.jpg" alt="Iluminação e Led">
+                        <div class="preview-label">💡 Iluminação & Elétrica</div>
+                    </div>
+                    <div class="preview-box">
+                        <img src="assets/cards/decks_madeira.jpg" alt="Área de Lazer e Deck">
+                        <div class="preview-label">🏊 Lazer & Acabamento</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CATEGORIES STRIP -->
+    <div class="quick-strip">
+        <div class="quick-strip-container">
+            <a href="#madeiras" class="quick-cat-btn">
+                <span class="icon">🪵</span>
+                <span class="label">Madeiras Nobres & Caixaria</span>
+            </a>
+            <a href="#construcao" class="quick-cat-btn">
+                <span class="icon">🧱</span>
+                <span class="label">Cimento, Areia & Ferragens</span>
+            </a>
+            <a href="#eletrica" class="quick-cat-btn">
+                <span class="icon">⚡</span>
+                <span class="label">Iluminação & Elétrica</span>
+            </a>
+            <a href="#portas" class="quick-cat-btn">
+                <span class="icon">🚪</span>
+                <span class="label">Portas, Janelas & Painéis</span>
+            </a>
+            <a href="#lazer" class="quick-cat-btn">
+                <span class="icon">🏖️</span>
+                <span class="label">Área de Lazer & Decks</span>
+            </a>
+            <a href="#tintas" class="quick-cat-btn">
+                <span class="icon">🎨</span>
+                <span class="label">Pisos, Tintas & Hidráulica</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 1. MADEIRAMENTO DE ALTA QUALIDADE (DESTAQUE LINHAS, CAIBROS E RIPAS) -->
+    <section id="madeiras">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Diferencial de Origem</span>
+                <h2 class="section-title">Madeiramento de <span>Alta Qualidade</span></h2>
+                <p class="section-desc">Linhas, caibros e ripas selecionados com rigor para garantir o melhor alinhamento, rigidez e durabilidade para a sua cobertura.</p>
+            </div>
+
+            <div class="products-grid-3">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Alta Resistência</span>
+                        <img src="assets/cards/madeiras_massaranduba.jpg" alt="Madeira Massaranduba">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Madeira Massaranduba</h3>
+                        <div class="card-subtitle">Máxima densidade e imunidade natural</div>
+                        <ul class="card-items-list">
+                            <li><strong>Linhas Estruturais</strong> para suporte de peso</li>
+                            <li><strong>Caibros Selecionados</strong> retos e sem empeno</li>
+                            <li><strong>Ripas Resistentes</strong> para telhados pesados</li>
+                            <li>Altíssima durabilidade contra umidade</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Madeira%20Massaranduba%20(Linhas%2C%20Caibros%20e%20Ripas)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Massaranduba
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Ótimo Custo-Benefício</span>
+                        <img src="assets/cards/madeiras_mista.jpg" alt="Madeira Mista">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Madeira Mista de Lei</h3>
+                        <div class="card-subtitle">Versatilidade e firmeza para sua obra</div>
+                        <ul class="card-items-list">
+                            <li><strong>Linhas e Barrotes</strong> de alta capacidade</li>
+                            <li><strong>Caibros Mistos</strong> selecionados peça a peça</li>
+                            <li><strong>Ripas e Caibros</strong> de fácil manuseio e fixação</li>
+                            <li>Secagem adequada para evitar torções</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Madeira%20Mista%20(Linhas%2C%20Caibros%20e%20Ripas)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Madeira Mista
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag novo">Serviço Especial</span>
+                        <img src="assets/cards/servicos_marcenaria.jpg" alt="Serviços de Marcenaria">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Serviços na Madeira</h3>
+                        <div class="card-subtitle">Acabamento pronto direto na loja</div>
+                        <ul class="card-items-list">
+                            <li><strong>Aparelhamento</strong> de peças (superfície lisa)</li>
+                            <li><strong>Desempeno</strong> e alinhamento profissional</li>
+                            <li><strong>Boleamento</strong> de quinas para acabamento</li>
+                            <li><strong>Cortes Especiais</strong> nas medidas do seu projeto</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20madeira%20com%20servi%C3%A7o%20de%20aparelhamento%2Fdesempeno." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Pedir Peça Aparelhada
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. CAIXARIA, ABAFAMENTO E FORMAS -->
+    <section class="bg-gray-section" id="caixaria">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Estrutura & Concretagem</span>
+                <h2 class="section-title">Madeiras para <span>Caixaria e Abafamento</span></h2>
+                <p class="section-desc">Tudo em tábuas, barrotes e chapas de compensado e madeirite para moldar vigas, colunas e lajes com zero desperdício.</p>
+            </div>
+
+            <div class="products-grid-3">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Brutas e Limpas</span>
+                        <img src="assets/cards/tabuas_barrotes.jpg" alt="Tábuas e Barrotes">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tábuas & Barrotes</h3>
+                        <div class="card-subtitle">Pinus & Madeira Mista</div>
+                        <ul class="card-items-list">
+                            <li><strong>Tábuas de Pinus</strong> econômicas e leves</li>
+                            <li><strong>Tábuas de Madeira Mista</strong> para maior reuso</li>
+                            <li><strong>Barrotes de sustentação</strong> reforçados</li>
+                            <li>Ideais para caixaria de vigas, colunas e baldrames</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20T%C3%A1buas%20e%20Barrotes%20(Pinus%20e%20Mista)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Tábuas & Barrotes
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Alto Reuso</span>
+                        <img src="assets/cards/maderite.jpg" alt="Madeirite">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Madeirite</h3>
+                        <div class="card-subtitle">Plastificado & Cola Branca</div>
+                        <ul class="card-items-list">
+                            <li><strong>Madeirite Plastificado:</strong> filme fenólico liso</li>
+                            <li><strong>Madeirite Cola Branca / Resinado:</strong> ótimo custo</li>
+                            <li>Superfície uniforme para concreto aparente</li>
+                            <li>Diversas espessuras para lajes e fôrmas</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Madeirite%20Plastificado%20e%20Resinado." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Madeirite
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Resistência Máxima</span>
+                        <img src="assets/cards/compensados.jpg" alt="Compensado Naval">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Compensados</h3>
+                        <div class="card-subtitle">Comum & Naval 100% Imune à Água</div>
+                        <ul class="card-items-list">
+                            <li><strong>Compensado Naval:</strong> colagem fenólica à prova d'água</li>
+                            <li><strong>Compensado Comum:</strong> marcenaria e divisórias</li>
+                            <li>Variedade completa em espessuras (4mm a 18mm)</li>
+                            <li>Resistência mecânica e estabilidade dimensional</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Compensado%20Naval%20e%20Comum." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Compensado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CIMENTO E MATERIAIS PARA CONSTRUÇÃO -->
+    <section id="construcao">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Bruto & Estrutural</span>
+                <h2 class="section-title">Cimento e <span>Material para Construção</span></h2>
+                <p class="section-desc">Areia, brita, cimento e ferragens pesadas direto do depósito para o seu canteiro de obras com a máxima agilidade.</p>
+            </div>
+
+            <div class="products-grid-4">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Líder de Vendas</span>
+                        <img src="assets/cards/cimento_agregados.jpg" alt="Cimento CP II">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cimento & Agregados</h3>
+                        <div class="card-subtitle">Fundações & Concretagem</div>
+                        <ul class="card-items-list">
+                            <li><strong>Cimento CP II</strong> (Sacos 50kg)</li>
+                            <li><strong>Areia Lavada</strong> (Média e Grossa)</li>
+                            <li><strong>Brita 0, 1 e 2</strong> selecionadas</li>
+                            <li><strong>Cascalho</strong> para drenagem e base</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Cimento%2C%20Areia%20e%20Brita." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Cimento & Brita
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Norma ABNT</span>
+                        <img src="assets/cards/ferragens_armadas.jpg" alt="Ferragens e Aço">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ferragens Armadas</h3>
+                        <div class="card-subtitle">Aço CA-50 & CA-60</div>
+                        <ul class="card-items-list">
+                            <li><strong>Colunas Prontas</strong> e Vigas armadas</li>
+                            <li><strong>Vergalhões</strong> em todas as bitolas</li>
+                            <li><strong>Malhas Pop</strong> para pisos e lajes</li>
+                            <li><strong>Espaçadores plásticos</strong> para ferro</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Ferragens%20Armadas%20(Colunas%2C%20Vergalh%C3%B5es%20e%20Malhas)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Ferragens
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Impermeabilizantes</span>
+                        <img src="assets/cards/quimicos_aditivos.jpg" alt="Vedacit e Vedalit">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Químicos & Aditivos</h3>
+                        <div class="card-subtitle">Zero Infiltração</div>
+                        <ul class="card-items-list">
+                            <li><strong>Vedacit & Vedalit</strong> para massa</li>
+                            <li><strong>Compound adesivo</strong> estrutural</li>
+                            <li>Canaletas e drenos de proteção</li>
+                            <li>Aditivos plastificantes e hidrófugos</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20Vedacit%2C%20Vedalit%20e%20aditivos." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Impermeabilizantes
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Cobertura</span>
+                        <img src="assets/cards/telhas_coberta.jpg" alt="Telhas para Coberta">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Telhas para Coberta</h3>
+                        <div class="card-subtitle">Todas as Variedades</div>
+                        <ul class="card-items-list">
+                            <li><strong>Telha Canal & Americana</strong></li>
+                            <li><strong>Telha Russa / Colonial</strong></li>
+                            <li><strong>Telha Fibrocimento</strong> reforçada</li>
+                            <li><strong>Telhas Ecológicas & Translúcidas</strong></li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Telhas%20(Canal%2C%20Russa%2C%20Fibrocimento%2C%20Transl%C3%BAcida)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Telhas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ILUMINAÇÃO & MATERIAL ELÉTRICO -->
+    <section class="bg-gray-section" id="eletrica">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Tecnologia & Estilo</span>
+                <h2 class="section-title">Iluminação Ideal e <span>Material Elétrico</span></h2>
+                <p class="section-desc">Do cabeamento técnico à iluminação cênica de LED: modernize seus ambientes com segurança, economia e design.</p>
+            </div>
+
+            <div class="products-grid-3">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Tendência</span>
+                        <img src="assets/cards/iluminacao_led.jpg" alt="Fitas de LED e Perfis">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Iluminação em LED</h3>
+                        <div class="card-subtitle">Perfis, Fitas e Painéis</div>
+                        <ul class="card-items-list">
+                            <li><strong>Fitas de LED</strong> (Branco Quente, Neutro e Frio)</li>
+                            <li><strong>Canaletas e Perfis de Alumínio</strong> para LED</li>
+                            <li><strong>Painéis Plafon</strong> de Sobrepor e Embutir</li>
+                            <li><strong>Spots direcionáveis</strong> e Arandelas decorativas</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Ilumina%C3%A7%C3%A3o%20LED%20(Fitas%2C%20Perfis%2C%20Pain%C3%A9is%20e%20Spots)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Iluminação LED
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Certificação Inmetro</span>
+                        <img src="assets/cards/cabos_condutores.jpg" alt="Condutores e Cabos">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cabos & Condutores</h3>
+                        <div class="card-subtitle">Segurança Elétrica Total</div>
+                        <ul class="card-items-list">
+                            <li><strong>Cabos Flexíveis</strong> (1,5mm a 16mm)</li>
+                            <li><strong>Cabos Rígidos e Cabos PP</strong> reforçados</li>
+                            <li><strong>Conectores GTDU</strong> e barras de derivação</li>
+                            <li>Eletrodutos, caixas de passagem e mangueiras</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Cabos%20Flex%C3%ADveis%2C%20Cabos%20PP%20e%20Eletrodutos." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Cabos & Fios
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Linha Completa</span>
+                        <img src="assets/cards/lampadas_protecao.jpg" alt="Lâmpadas e Proteção">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Lâmpadas & Proteção</h3>
+                        <div class="card-subtitle">Bulbos & Disjuntores</div>
+                        <ul class="card-items-list">
+                            <li><strong>Lâmpadas Bulbo LED</strong> de todas as potências</li>
+                            <li><strong>Luminárias Públicas LED</strong> de alta potência</li>
+                            <li><strong>Disjuntores DIN</strong> (Monopolares e Tripolares)</li>
+                            <li>Quadros de distribuição e barramentos</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Disjuntores%2C%20L%C3%A2mpadas%20Bulbo%20e%20Lumin%C3%A1rias%20P%C3%BAblicas." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Lâmpadas & Disjuntores
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PORTAS, JANELAS & MARCENARIA SOB MEDIDA -->
+    <section id="portas">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Design & Esquadrias</span>
+                <h2 class="section-title">Portas, Janelas e <span>Marcenaria</span></h2>
+                <p class="section-desc">Portas nobres, pivotantes, janelas em madeira de lei feitas sob medida e soluções completas com batentes e alizares.</p>
+            </div>
+
+            <div class="products-grid-3">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Elegância</span>
+                        <img src="assets/cards/portas_nobres.jpg" alt="Portas Pivotantes e Maciças">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Portas Nobres & Pivotantes</h3>
+                        <div class="card-subtitle">Mista & Jatobá</div>
+                        <ul class="card-items-list">
+                            <li><strong>Portas Pivotantes</strong> com painel moderno</li>
+                            <li><strong>Portas Maciças</strong> para entrada e cozinha</li>
+                            <li>Madeiras selecionadas em Madeira Mista e Jatobá</li>
+                            <li>Forras (batentes) e alizares (guarnições) combinando</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Portas%20Pivotantes%20e%20Portas%20de%20Entrada." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Portas Nobres
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Marcas Renomadas</span>
+                        <img src="assets/cards/portas_internas.jpg" alt="Portas Internas">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Portas Internas Semi-Ocas</h3>
+                        <div class="card-subtitle">Schlindwein & Madelar</div>
+                        <ul class="card-items-list">
+                            <li><strong>Portas Internas Lisas e Frisadas</strong></li>
+                            <li>Marcas líderes: <strong>Schlindwein e Madelar</strong></li>
+                            <li>Ótimo isolamento acústico e visual limpo</li>
+                            <li>Kit completo com fechaduras e dobradiças</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Portas%20Internas%20Semi-Ocas%20(Schlindwein%20%2F%20Madelar)." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Portas Internas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Sob Medida</span>
+                        <img src="assets/cards/janelas_madeira.jpg" alt="Janelas sob Medida">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Janelas em Madeira</h3>
+                        <div class="card-subtitle">Mista & Massaranduba</div>
+                        <ul class="card-items-list">
+                            <li><strong>Fabricamos sob medida</strong> no tamanho exato do seu projeto</li>
+                            <li>Madeira Mista e Massaranduba selecionadas</li>
+                            <li>Modelos de correr, veneziana e guilhotina</li>
+                            <li>Encaixes perfeitos e acabamento artesanal</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20Janelas%20em%20Madeira%20Sob%20Medida." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Pedir Janela Sob Medida
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. ÁREA DE LAZER, PERGOLADOS & DECK -->
+    <section class="bg-gray-section" id="lazer">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Conforto & Bem-Estar</span>
+                <h2 class="section-title">Material para sua <span>Área de Lazer</span></h2>
+                <p class="section-desc">Crie o espaço gourmet e de lazer dos seus sonhos: churrasqueiras, piscinas em PVC, decks de madeira e pergolados sofisticados.</p>
+            </div>
+
+            <div class="products-grid-4">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Espaço Gourmet</span>
+                        <img src="assets/cards/churrasqueiras.jpg" alt="Churrasqueiras">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Churrasqueiras</h3>
+                        <div class="card-subtitle">Pré-Moldadas & Refratárias</div>
+                        <ul class="card-items-list">
+                            <li>Churrasqueiras completas prontas para montar</li>
+                            <li>Tijolos refratários e argamassa térmica</li>
+                            <li>Grelhas em inox e acessórios de chaminé</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20Churrasqueira%20e%20acess%C3%B3rios%20para%20%C3%A1rea%20gourmet." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Churrasqueira
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Praticidade</span>
+                        <img src="assets/cards/piscinas_pvc.jpg" alt="Piscina Multiuso PVC">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Piscinas em PVC</h3>
+                        <div class="card-subtitle">Diversão & Fácil Instalação</div>
+                        <ul class="card-items-list">
+                            <li>Piscinas em PVC estruturadas de alta resistência</li>
+                            <li>Modelos e capacidades variadas para a família</li>
+                            <li>Acessórios, bombas e filtros para tratamento</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20pre%C3%A7os%20de%20Piscinas%20em%20PVC." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Piscina PVC
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Resistente ao Sol</span>
+                        <img src="assets/cards/decks_madeira.jpg" alt="Deck de Madeira">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Decks de Madeira</h3>
+                        <div class="card-subtitle">Área Externa & Piscina</div>
+                        <ul class="card-items-list">
+                            <li>Réguas de deck em madeira maciça nobre</li>
+                            <li>Tratamento especial para contato com água e sol</li>
+                            <li>Fixação segura com presilhas e parafusos inox</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20r%C3%A9guas%20de%20Deck%20de%20Madeira%20para%20piscina." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Deck de Madeira
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Sofisticação</span>
+                        <img src="assets/cards/pergolados.jpg" alt="Pergolados de Madeira">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pergolados</h3>
+                        <div class="card-subtitle">Vigas & Pilares Nobres</div>
+                        <ul class="card-items-list">
+                            <li>Pilares e vigas robustas em Massaranduba/Mista</li>
+                            <li>Madeiras aparelhadas e boleadas prontas para verniz</li>
+                            <li>Compatível com iluminação de LED e coberturas</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20madeiramento%20completo%20para%20Pergolado." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Pergolado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FERRAGENS, FERRAMENTAS & ESCADAS ESPECIAIS -->
+    <section id="ferragens">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Equipamentos & Precisão</span>
+                <h2 class="section-title">Ferragens, Ferramentas e <span>Escadas Especiais</span></h2>
+                <p class="section-desc">Ferramentas manuais, elétricas, discos de alta performance e escadas profissionais articuladas e em fibra de vidro.</p>
+            </div>
+
+            <div class="products-grid-3">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Diferencial Raro na Região</span>
+                        <img src="assets/cards/escadas_especiais.jpg" alt="Escadas Articuladas e Fibra">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Escadas Especiais</h3>
+                        <div class="card-subtitle">Articuladas & Fibra de Vidro</div>
+                        <ul class="card-items-list">
+                            <li><strong>Escada Articulada Multifuncional:</strong> versatilidade total</li>
+                            <li><strong>Escada em Fibra de Vidro:</strong> isolamento elétrico 100% seguro</li>
+                            <li>Difícil de encontrar na concorrência, pronta entrega na MSF</li>
+                            <li>Escadas de alumínio extensíveis e tipo pintor</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Escada%20Articulada%20%2F%20Escada%20de%20Fibra." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Escadas Especiais
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Alta Produtividade</span>
+                        <img src="assets/cards/ferramentas_eletricas.jpg" alt="Ferramentas Elétricas">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ferramentas Elétricas</h3>
+                        <div class="card-subtitle">Cortes & Furos Precisos</div>
+                        <ul class="card-items-list">
+                            <li><strong>Serras Mármore</strong> para corte de piso e alvenaria</li>
+                            <li><strong>Furadeiras e Parafusadeiras</strong> de alto torque</li>
+                            <li><strong>Sopradores Térmicos</strong> profissionais</li>
+                            <li><strong>Discos de Corte</strong> para ferro e discos diamantados cerâmicos</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Ferramentas%20El%C3%A9tricas%20e%20Discos%20de%20Corte." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Ferramentas Elétricas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Linha Pesada</span>
+                        <img src="assets/cards/ferramentas_manuais.jpg" alt="Ferramentas Manuais">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ferramentas Manuais</h3>
+                        <div class="card-subtitle">Para o Profissional da Obra</div>
+                        <ul class="card-items-list">
+                            <li><strong>Enxadas, Pás e Marretas</strong> forjadas</li>
+                            <li><strong>Martelos, Chaves de Fenda e Phillips</strong></li>
+                            <li><strong>Trenas de precisão</strong>, níveis e prumos</li>
+                            <li>Desempenadeiras e colheres de pedreiro</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Ferramentas%20Manuais%20para%20obra." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Ferramentas Manuais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PISOS, ACABAMENTOS, PINTURA & HIDRÁULICA -->
+    <section class="bg-gray-section" id="tintas">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Acabamento & Estilo</span>
+                <h2 class="section-title">Pisos, Tintas, <span>Hidráulica e Tendências</span></h2>
+                <p class="section-desc">Proteção, impermeabilização, revestimentos, louças sanitárias, balcões em MDF e a novidade do Painel Ripado em PVC.</p>
+            </div>
+
+            <div class="products-grid-4">
+                <!-- CARD 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Nivelamento Perfeito</span>
+                        <img src="assets/cards/pisos_nivelamento.jpg" alt="Pisos e Cerâmicas">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pisos & Nivelamento</h3>
+                        <div class="card-subtitle">Cerâmicas & Argamassas</div>
+                        <ul class="card-items-list">
+                            <li><strong>Cerâmicas, Rachinhas e Lajotas</strong> de concreto</li>
+                            <li><strong>Espaçadores Niveladores & Cunhas</strong></li>
+                            <li><strong>Argamassas Colantes</strong> e Rejuntes finos</li>
+                            <li>Raspa-rejunte e ferramentas de assentamento</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Pisos%2C%20Argamassas%20e%20Espa%C3%A7adores%20Niveladores." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Pisos & Rejuntes
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag destaque">Proteção & Cor</span>
+                        <img src="assets/cards/tintas_pintura.jpg" alt="Tintas e Pintura">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tintas & Pintura</h3>
+                        <div class="card-subtitle">Proteção de Obra</div>
+                        <ul class="card-items-list">
+                            <li><strong>Salva Piso & Fita Crepe Azul</strong> de pintura</li>
+                            <li><strong>Tinta Emborrachada</strong> impermeável & Texturas</li>
+                            <li><strong>Massa Corrida, Acrílica</strong>, Rolos e Pincéis</li>
+                            <li><strong>Vernizes, Seladores</strong> e Esmaltes Sintéticos</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Tintas%2C%20Salva%20Piso%2C%20Verniz%20e%20Massa%20Acr%C3%ADlica." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Linha de Pintura
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag">Água & Esgoto</span>
+                        <img src="assets/cards/tubos_hidraulica.jpg" alt="Tubos e Conexões">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tubos & Hidráulica</h3>
+                        <div class="card-subtitle">Linha Soldável & Esgoto</div>
+                        <ul class="card-items-list">
+                            <li><strong>Tubos Soldáveis</strong> e conexões completas</li>
+                            <li><strong>Tubos de Esgoto</strong> e Caixas de Gordura</li>
+                            <li>Torneiras, registros e metais sanitários</li>
+                            <li>Bacias sanitárias, assentos e cubas inox</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Tubos%2C%20Conex%C3%B5es%20e%20Lou%C3%A7as%20Sanit%C3%A1rias." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Cotar Tubos & Conexões
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="product-card">
+                    <div class="card-img-wrap">
+                        <span class="card-tag novo">Novidade na Loja</span>
+                        <img src="assets/cards/mdf_painel_pvc.jpg" alt="Balcões MDF e Painel Ripado PVC">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">MDF & Painel PVC</h3>
+                        <div class="card-subtitle">Balcões & Ripados</div>
+                        <ul class="card-items-list">
+                            <li><strong>PAINEL RIPADO EM PVC:</strong> modernidade resistente à água</li>
+                            <li><strong>Bancadas de Mármore</strong> com cuba/pia integrada</li>
+                            <li><strong>Balcões em MDF</strong> e armários de sobrepor</li>
+                            <li>Acabamentos práticos para cozinhas e banheiros</li>
+                        </ul>
+                        <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20Painel%20Ripado%20em%20PVC%20e%20Balc%C3%B5es%20em%20MDF." class="card-cta" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Conhecer Ripado & Balcões
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE ESCOLHER A MSF (HOME CENTER) -->
+    <section class="bg-blue-section" id="diferenciais">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Credibilidade & Eficiência</span>
+                <h2 class="section-title">Por que comprar no <span>Home Center MSF?</span></h2>
+                <p class="section-desc">Construímos soluções completas para construtores, arquitetos e proprietários que buscam qualidade máxima sem dor de cabeça.</p>
+            </div>
+
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-number">01</div>
+                    <h3 class="why-title">O Maior Home Center da Cidade</h3>
+                    <p class="why-text">Não perca tempo rodando por várias lojas. Encontre absolutamente tudo da fundação ao acabamento com os melhores preços da região.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">02</div>
+                    <h3 class="why-title">Madeiramento Nobre & Selecionado</h3>
+                    <p class="why-text">Rigidez e durabilidade garantidas com peças selecionadas em Madeira Mista e Massaranduba sem empenos e com excelente secagem.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">03</div>
+                    <h3 class="why-title">Serviços Especiais na Loja</h3>
+                    <p class="why-text">Oferecemos aparelhamento, desempeno, boleamento e cortes precisos sob medida para que sua madeira chegue pronta para instalação.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">04</div>
+                    <h3 class="why-title">Logística Ágil em até 72 Horas</h3>
+                    <p class="why-text">Frota própria e equipe preparada para descarregar seus materiais direto no canteiro de obras em Bayeux e toda a Grande João Pessoa.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">05</div>
+                    <h3 class="why-title">Cotação Rápida via WhatsApp</h3>
+                    <p class="why-text">Envie sua lista de materiais em foto ou texto. Nossa equipe técnica calcula as quantidades e retorna seu orçamento fechado em minutos.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-number">06</div>
+                    <h3 class="why-title">Condições Facilitadas de Pagamento</h3>
+                    <p class="why-text">Aceitamos PIX, cartões de crédito e débito, além de faturamento especial mediante análise para construtoras e profissionais parceiros.</p>
+                </div>
+            </div>
+
+            <!-- BANNER DE DESTAQUE INTERNO -->
+            <div class="highlight-banner">
+                <div>
+                    <h3>Economize tempo e garanta materiais de primeira linha na sua obra</h3>
+                    <p>Fale agora com um de nossos consultores técnicos e receba uma cotação completa sem compromisso.</p>
+                    <div class="highlight-badges">
+                        <span class="highlight-pill">✓ Atendimento Consultivo</span>
+                        <span class="highlight-pill">✓ Lista Completa em Minutos</span>
+                        <span class="highlight-pill">✓ Entrega Garantida</span>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://wa.me/5583988243453?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20especial%20para%20minha%20obra!" class="btn-banner-whatsapp" target="_blank" rel="noopener">
+                        <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        Solicitar Orçamento no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS DE CLIENTES -->
+    <section class="bg-gray-section" id="depoimentos">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Confiança Comprovada</span>
+                <h2 class="section-title">O que dizem nossos <span>Clientes e Parceiros</span></h2>
+                <p class="section-desc">A satisfação de construtores, arquitetos e proprietários que encontram tudo em um só lugar.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testi-card">
+                    <p class="testi-text">
+                        "Comprei desde o cimento e ferragens da fundação até as madeiras de Massaranduba da coberta e a iluminação em LED. Ter tudo em uma única loja facilitou demais o cronograma da minha obra!"
+                    </p>
+                    <div class="testi-author">
+                        <img src="assets/avatar-1.jpg" alt="Roberto Souza" class="testi-avatar">
+                        <div>
+                            <div class="testi-name">Roberto Souza</div>
+                            <div class="testi-role">Construtor Civil | Bayeux - PB</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-text">
+                        "O atendimento via WhatsApp é impecável. Especifico os balcões em MDF, portas pivotantes e os painéis ripados em PVC para os projetos e a MSF entrega com extrema rapidez e qualidade."
+                    </p>
+                    <div class="testi-author">
+                        <img src="assets/avatar-2.jpg" alt="Juliana Costa" class="testi-avatar">
+                        <div>
+                            <div class="testi-name">Juliana Costa</div>
+                            <div class="testi-role">Arquiteta & Urbanista | João Pessoa - PB</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <p class="testi-text">
+                        "Fiz toda a reforma da minha casa e da área de lazer com a MSF. Madeira de qualidade, serviço de aparelhamento perfeito e preço justo. A entrega em até 72h foi pontualíssima!"
+                    </p>
+                    <div class="testi-author">
+                        <img src="assets/avatar-3.jpg" alt="Carlos Eduardo" class="testi-avatar">
+                        <div>
+                            <div class="testi-name">Carlos Eduardo</div>
+                            <div class="testi-role">Proprietário Residencial | Santa Rita - PB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DÚVIDAS FREQUENTES (FAQ) -->
+    <section id="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Tire suas Dúvidas</span>
+                <h2 class="section-title">Perguntas <span>Frequentes</span></h2>
+                <p class="section-desc">Confira as respostas para as perguntas mais comuns sobre produtos, serviços e logística da MSF.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>A MSF realiza serviços de acabamento e cortes na madeira?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Realizamos na nossa própria estrutura os serviços profissionais de aparelhamento (deixando a madeira lisa), desempeno (alinhamento), boleamento de quinas e cortes especiais sob medida para o seu projeto.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual é o prazo médio de entrega dos materiais?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Nosso prazo padrão de entrega é de até 72 horas úteis direto no seu canteiro de obras em Bayeux e em toda a Região Metropolitana de João Pessoa. O prazo pode variar ligeiramente caso a peça passe por serviços especiais de marcenaria (aparelhamento/produção).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>A MSF trabalha com outros materiais além de madeira?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Somos o maior Home Center da região. Temos linha completa de cimento, areia, brita, ferragens armadas, iluminação LED, cabos elétricos, tubos e conexões hidráulicas, tintas, pisos, portas, janelas, louças, balcões em MDF e painéis ripados em PVC.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quais são as formas de pagamento aceitas?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Aceitamos PIX, transferências bancárias, cartões de crédito (com opções de parcelamento) e débito. Para construtoras e compras corporativas recorrentes, realizamos análise cadastral para faturamento especial.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como faço para enviar minha lista de materiais para cotação?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        É muito simples! Basta clicar no botão de WhatsApp em nosso site e enviar uma foto da sua lista de materiais ou escrever os itens. Nossos consultores retornam com os preços e prazos em poucos minutos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-final-section">
+        <div class="cta-final-box">
+            <h2 class="cta-final-title">Pronto para iniciar sua obra ou reforma?</h2>
+            <p class="cta-final-desc">Economize tempo e dinheiro com a qualidade e a agilidade do maior Home Center da região. Envie sua lista agora mesmo!</p>
+            <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor%20e%20enviar%20minha%20lista%20de%20materiais." class="btn-whatsapp-hero" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <span>Falar com Vendedor no WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Logo MSF">
+                </div>
+                <p class="footer-about">
+                    O maior Home Center de Bayeux e região metropolitana. Do alicerce ao acabamento: madeiramento selecionado, materiais de construção, ferragens, elétrica, iluminação, tintas e marcenaria sob medida.
+                </p>
+                <p style="color: #E2E8F0; font-weight: 700;">"Quem constrói bem, constrói com a MSF!"</p>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">Atendimento</h4>
+                <ul class="footer-contacts-list">
+                    <li>
+                        <strong>Telefone Fixo:</strong>
+                        <a href="tel:8332321663">(83) 3232-1663</a>
+                    </li>
+                    <li>
+                        <strong>WhatsApp Vendas:</strong>
+                        <a href="https://wa.me/5583988243453" target="_blank" rel="noopener">(83) 98824-3453</a>
+                    </li>
+                    <li>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:msfeireli@gmail.com">msfeireli@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/msf_madeireira" target="_blank" rel="noopener">@msf_madeireira</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">Localização</h4>
+                <ul class="footer-contacts-list">
+                    <li>Rua Raimundo Feliz, 46, Galpão B</li>
+                    <li>Alto da Boa Vista, Bayeux - PB</li>
+                    <li>CEP: 58306-000</li>
+                    <li><strong>Horário:</strong> Seg. a Sex. das 07:30 às 17:30 | Sáb. das 07:30 às 12:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p><strong>MSF Comércio de Madeiras e Materiais de Construções Ltda - ME</strong> | CNPJ: 22.659.313/0001-99</p>
+            <p>&copy; 2026 MSF Madeiras e Materiais de Construção. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/5583988243453?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20MSF%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." class="btn-whatsapp-float" target="_blank" rel="noopener" title="Fale conosco no WhatsApp">
+        <div class="float-pulse"></div>
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </a>
+
+    <!-- FAQ SCRIPT -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
